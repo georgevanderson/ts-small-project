@@ -25,6 +25,7 @@ export interface Bar {
   primaryKey: Key<string>; // From Foo.primaryKey
   utcTimestamp: DateTime; // From Foo.timestamp
   hasText: boolean; // From Foo.optionalText?
+  isEnabled: boolean; // From Foo.isEnabled
   textLength: number; // From Foo.optionalText.length
 }
 
