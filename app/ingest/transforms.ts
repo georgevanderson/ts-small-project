@@ -39,6 +39,7 @@ FooPipeline.stream!.addTransform(
       primaryKey: foo.primaryKey,
       utcTimestamp: new Date(foo.timestamp * 1000),
       hasText: foo.optionalText !== undefined,
+      isEnabled: Math.random() < 0.5,
       textLength: foo.optionalText?.length ?? 0,
     };
 
