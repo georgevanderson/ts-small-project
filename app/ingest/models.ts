@@ -17,6 +17,7 @@ import {
 export interface Foo {
   primaryKey: Key<string>; // Unique ID
   timestamp: number; // Unix timestamp
+  isEnabled?: boolean; // Whether the record is enabled
   optionalText?: string; // Text to analyze
 }
 
